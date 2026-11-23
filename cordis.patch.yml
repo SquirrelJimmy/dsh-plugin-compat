@@ -1,0 +1,3 @@
+- insert:
+    - id: plugin-compat
+      name: 'dsh-plugin-compat'

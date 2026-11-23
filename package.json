@@ -1,0 +1,24 @@
+{
+  "name": "dsh-plugin-compat",
+  "version": "0.2.3-alpha.2",
+  "private": true,
+  "description": "Compatibility layer for legacy third-party DSH Web plugins",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SquirrelJimmy/dsh-plugin-compat"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.3-alpha.2 <0.3.0"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "cordis.patch.yml", "README.md", "icon.svg"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
